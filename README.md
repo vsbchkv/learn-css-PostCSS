@@ -35,5 +35,5 @@
 <ol>
     <li>Файлы стили разделены на компоненты, которые подключаются в общий styles.css</li>
     <li>Директива @apply позволяет наследовать стили другого селектора, аналогично @extend в SASS</li>
-    <li>Редакторы по умолчанию подвечиваю синтаксис cssnext как ошибки. Можно исправить плагинами <a href="https://marketplace.visualstudio.com/items?itemName=ricard.PostCSS">для vs code</a> или <a href="https://plugins.jetbrains.com/plugin/8578-postcss">для webstorm</a></li>
+    <li>Редакторы по умолчанию подсвечивают синтаксис cssnext как ошибки. Можно исправить плагинами <a href="https://marketplace.visualstudio.com/items?itemName=ricard.PostCSS">для vs code</a> или <a href="https://plugins.jetbrains.com/plugin/8578-postcss">для webstorm</a></li>
 </ol>
