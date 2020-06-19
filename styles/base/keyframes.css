@@ -1,0 +1,18 @@
+@keyframes scroll {
+
+  from {
+    left: -6.5rem;
+  }
+
+  30% {
+    left: -4rem;
+  }
+
+  60% {
+    left: -4rem;
+  }
+
+  to {
+    left: -6.5rem;
+  }
+}

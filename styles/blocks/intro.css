@@ -1,0 +1,105 @@
+.intro {
+
+  @apply --centred;
+  display: flex;
+  max-width: var(--desktop);
+  padding-top: 20.5rem;
+}
+
+.intro__content {
+  flex: 1 1 72rem;
+  padding-left: 5rem;
+}
+
+.intro__header {
+  margin-bottom: 2rem;
+  font-size: 4.8rem;
+  font-weight: bold;
+  line-height: 5.6rem;
+}
+
+.intro__description {
+  margin-bottom: 5rem;
+  font-size: 1.8rem;
+  line-height: 3.4rem;
+  color: var(--gray);
+}
+
+.intro__link {
+  position: relative;
+  font-size: 1.6rem;
+  line-height: 1.8rem;
+  letter-spacing: .185rem;
+  color: inherit;
+  text-transform: uppercase;
+
+  &:after {
+
+    @apply --line;
+    right: -4rem;
+  }
+
+  &:hover {
+
+    &:after {
+      top: calc(100% + .2rem);
+      right: 0;
+      width: calc(100%);
+      transition:
+        top .2s ease-out,
+        right .3s .2s,
+        width .3s .2s ease-in-out;
+    }
+  }
+
+  &:not(:hover) {
+
+    &:after {
+      transition:
+        top .2s .3s ease-out,
+        right .3s,
+        width .3s ease-in-out;
+    }
+  }
+}
+
+.intro__image {
+  flex: 1 0 72rem;
+}
+
+.intro__pic {
+  position: absolute;
+  right: -21.3rem;
+  bottom: -18.5%;
+  z-index: -1;
+  display: flex;
+  width: 83.7rem;
+  height: 83.7rem;
+}
+
+.intro__pic img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  box-shadow: 0 0 0 1.5vw var(--pink), 0 0 0 3vw #fe9e9c, 0 0 0 4.5vw #ffe2e2;
+}
+
+.intro__scroll {
+  position: absolute;
+  top: calc(100vh - 8rem);
+  left: 2.8rem;
+  display: inline-block;
+  line-height: 1.7rem;
+  letter-spacing: .15rem;
+  transform: rotate(-90deg);
+  text-transform: uppercase;
+
+  &:after {
+
+    @apply --line;
+    left: -5rem;
+    animation: scroll  5s infinite;
+  }
+}

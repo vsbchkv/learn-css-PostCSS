@@ -1,0 +1,35 @@
+:root {
+  --white: #fff;
+  --black: #111;
+  --gray: #888;
+  --pink: #ff746e;
+  --desktop: 144rem;
+
+  /* Resets list styles */
+  --listUnstyled: {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* aligns items by center */
+  --centred: {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 5rem;
+  }
+
+  /* adds decorative line as pseudoelement */
+  --line: {
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 3rem;
+    height: .4rem;
+    background-color: var(--black);
+    transform: translateY(-50%);
+    cursor: default;
+  }
+}
